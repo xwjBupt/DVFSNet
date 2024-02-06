@@ -3098,7 +3098,7 @@ class SideOut(nn.Module):
         return x
 
 
-class DVCNet(nn.Module):
+class DVFSNet(nn.Module):
     def __init__(
         self,
         input_channel: int = 3,
@@ -3155,7 +3155,7 @@ class DVCNet(nn.Module):
         expand_dim: int = 1,
         **kwargs,
     ):
-        super(DVCNet, self).__init__()
+        super(DVFSNet, self).__init__()
         self.use_marc = use_marc
         self.use_fusion = use_fusion
         self.loaded_keys = {}
